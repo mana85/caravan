@@ -1,3 +1,4 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述*/
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@ a {
 }
 
 header, nav, h2, .main-visual, footer {
-  font-family: Chalkduster, "Bradley Hand",Courier, "Segoe Print", sans-serif;
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
 
 header {
@@ -18,16 +19,23 @@ header {
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
-}
-
-header .heading {
-  /* headerタグ内のheadingクラスにのみ反映される */
-  font-size:32px;
+  position: relative;
 }
 
 .social i {
   display: inline-block;
   margin-left: 20px;
+}
+
+.social {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+header .heading {
+  /* headerタグ内のheadingクラスにのみ反映される */
+  font-size:32px;
 }
 
 .nav-list {
@@ -221,6 +229,7 @@ footer {
   color: #fff;
 }
 
+/*↓レスポンシブ対応テスト用の記述*/
 /*すべての画面サイズで適用される設定*/
 
 .social i {
