@@ -232,29 +232,70 @@ footer {
 /*↓レスポンシブ対応テスト用の記述*/
 /*すべての画面サイズで適用される設定*/
 
-.social i {
-  color: black;
-}
-
-/*タブレット横置きサイズ（1024px）以下の際に適用される設定*/
-@media screen and (max-width:1024px) {
-  .social i {
-    color: green;
-  }
-}
-
-/*タブレット縦置きサイズ（768px）以下の際に適用される設定*/
-@media screen and (max-width:768px) {
-  .social i{
-    color: red;
-  }
-}
-
 /*スマートフォンサイズ（425px）以下の際に適用される設定*/
 @media screen and (max-width:425px) {
+
+  /*ソーシャルアイコン消す*/
   .social i {
-    color: blue;
+    display: none;
   }
+
+  .nav-list-item {
+    display: block;
+  }
+
+  /*メインビジュアルのサイズ変更*/
+  .main-visual-content {
+    width: 100%; /*横幅40% */
+  }
+
+  /*メイン部分の修正*/
+  main {
+    width: 100%; /* 横幅サイズの変更*/
+    display: block; /* Flexboxの利用*/
+  }
+
+  /*ブログ部分の修正*/
+  .blog {
+    width: 100%; /*横幅サイズ変更*/
+  }
+
+  .blog-item {
+    margin: 10px;
+    width: 90%
+  }
+
+  .blog-image {
+    width: 49%;
+  }
+
+  /*ブログ部分の修正*/
+  .category {
+    display: none
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .instagram .sidebar-contents {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+    margin: 5px auto;
+  }
+
+   .sidebar-contents {
+     margin: 10px;
+   }
+
 }
 
 
