@@ -235,65 +235,74 @@ footer {
 /*スマートフォンサイズ（425px）以下の際に適用される設定*/
 @media screen and (max-width:425px) {
 
-  /*ソーシャルアイコン消す*/
-  .social i {
-    display: none;
+  header {
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
   }
 
   .nav-list-item {
-    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
   }
+
+  .social {
+    display: none;
+  }
+
 
   /*メインビジュアルのサイズ変更*/
   .main-visual-content {
-    width: 100%; /*横幅40% */
+    width: 100%;
   }
 
   /*メイン部分の修正*/
   main {
-    width: 100%; /* 横幅サイズの変更*/
-    display: block; /* Flexboxの利用*/
+    width: 100%;
+    display: block;
   }
 
-  /*ブログ部分の修正*/
   .blog {
-    width: 100%; /*横幅サイズ変更*/
+    width: 100%;
+    margin: 0;
   }
 
-  .blog-item {
-    margin: 10px;
-    width: 90%
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .blog-image {
     width: 49%;
   }
 
-  /*ブログ部分の修正*/
-  .category {
-    display: none
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
   }
 
   .sidebar {
     width: 100%;
-    margin-top: 40px;
   }
 
-  .instagram .sidebar-contents {
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+  .sidebar-contents {
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
   .instagram-box {
     width: 48%;
     padding-top: 48%;
-    margin: 5px auto;
   }
 
-   .sidebar-contents {
-     margin: 10px;
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+
+   .pagination {
+     margin-bottom: 50px;
    }
 
 }
